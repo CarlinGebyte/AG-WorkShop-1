@@ -19,6 +19,9 @@ main{
 .segundaParte{
     max-width: 40%;
     margin: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .terceraParte{
     max-width:35%;
