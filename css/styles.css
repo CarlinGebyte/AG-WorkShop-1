@@ -219,13 +219,50 @@ a:hover, a:active {
 }
 
 /*------------------------------------*\
+    $CARDS
+\*------------------------------------*/
+.prince-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-top: 2rem;
+  padding: 0 1rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.prince-content h1 {
+  text-align: center;
+}
+
+.prince-slide {
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  overflow-x: scroll;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.prince-card {
+  width: 300px;
+  text-align: center;
+}
+
+.prince-cardDetails {
+  margin-top: 1rem;
+}
+
+/*------------------------------------*\
     $FOOTER
 \*------------------------------------*/
 .prince-footer {
-  background-color: #1D1D1D;
-  position: fixed;
-  bottom: 0;
   width: 100%;
+  /* position: fixed;
+  bottom: 0; */
+  background-color: #1D1D1D;
 }
 
 .prince-footerImg {
