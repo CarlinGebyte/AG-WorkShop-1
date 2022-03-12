@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principe Fresco | WorkShop</title>
 
+    <!-- BOOTSTRAP -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+    <!-- PERSONALIZED CSS -->
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <!-- modal login -->
     <div class="modal-login" id="modal-login">
         <div class="modal-container">
-            <div class="modal-header">
+            <div class="header-modal">
                 <h3>LOGIN</h3>
             </div>
-            <div class="modal-body">
+            <div class="body-modal">
                 <form id="login-form">
                     <input class="form-control" type="email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required placeholder="email">
                     <input class="form-control" type="password" id="pass" required placeholder="password">
@@ -26,5 +34,8 @@
     </div>
     <!-- END modal login -->
     <script src="js/login.js" type="module"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
 </body>
 </html>
