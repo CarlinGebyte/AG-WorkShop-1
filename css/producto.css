@@ -25,6 +25,9 @@ main{
     height: 1000px;
     overflow-x: scroll;
 }
+.segundaParte::-webkit-scrollbar{
+    width: 0;
+}
 
 .terceraParte{
     max-width:35%;
