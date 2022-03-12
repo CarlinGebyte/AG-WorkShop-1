@@ -95,6 +95,9 @@ ul, li {
     background-color: #fff;
     border-radius: 1em;
 }
+.terceraParte {
+    background-color: #fff;
+}
 
 @media screen and (max-width: 425px){
     main{
