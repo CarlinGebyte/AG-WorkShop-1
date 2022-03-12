@@ -1,6 +1,5 @@
 const showProducts = async (array, cards) => {
   const products = array;
-  console.log(products);
   products.forEach((product) => {
     const { id, name, img, price } = product;
     cards.innerHTML += `

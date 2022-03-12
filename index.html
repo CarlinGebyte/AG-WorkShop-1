@@ -13,20 +13,22 @@
     <div class="carrito">
       <div class="container">
         <div class="cerrar">
-          <img src="./img/cerrar.png" alt="" />
+          <img id="close-cart" src="./img/cerrar.png" alt="" />
         </div>
-        <div class="seccion1">
-          <div>
-            <img src="./img/Rectangle 1.png" alt="Img producto comrar" />
-          </div>
-          <div>
-            <h2>Crown Sweatshirt</h2>
-            <p><span> S </span> $85.00</p>
-          </div>
-          <div>
-            <p class="cantidad">1</p>
-            <p>Remove</p>
-          </div>
+        <div id="cart-items">
+            <div class="seccion1">
+              <div>
+                <img src="./img/Rectangle 1.png" alt="Img producto comrar" />
+              </div>
+              <div>
+                <h2>Crown Sweatshirt</h2>
+                <p><span> S </span> $85.00</p>
+              </div>
+              <div>
+                <p class="cantidad">1</p>
+                <p>Remove</p>
+              </div>
+            </div>
         </div>
         <div class="flex">
           <p class="font">Subtotal</p>
@@ -120,7 +122,7 @@
         <div class="prince-navUser">
           <a href="" class="prince-navMenu-link">login</a>
           <img src="./img/icon-user.png" id="user-icon" alt="icon user" />
-          <img src="./img/icon-cart.png" alt="icon cart" />
+          <img src="./img/icon-cart.png" id="cart-icon" alt="icon cart" />
         </div>
       </nav>
       <button class="prince-navBtn" id="burger">
@@ -180,7 +182,7 @@
         </div>
       </section>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
     <script src="./js/login.js" type="module"></script>
   </body>
 </html>
