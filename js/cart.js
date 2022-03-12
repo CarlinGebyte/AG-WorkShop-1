@@ -18,6 +18,5 @@ const addProduct = (url, id) => {
   if (cart == "") {
     localStorage.setItem(JSON.parse(productAdd));
   } else {
-    c;
   }
 };
