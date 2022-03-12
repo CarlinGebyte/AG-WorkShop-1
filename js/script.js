@@ -1,3 +1,5 @@
+const url = 'https://fresh-prince-ag.herokuapp.com'
+
 const menu = document.querySelector('#menu')
 const dropdown = document.querySelector('#burger')
 const line = document.querySelector('.prince-navLine')

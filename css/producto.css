@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+main{
+    display: flex;
+    margin: 2%;
+}
+.primeraParte{
+    max-width: 15%;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    gap: 20px;
+}
+.segundaParte{
+    max-width: 40%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 1000px;
+    overflow-x: scroll;
+}
+.segundaParte::-webkit-scrollbar{
+    width: 0;
+}
+
+.terceraParte{
+    max-width:35%;
+    margin: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.terceraParte h2{
+    font-size: 40px;
+}
+.tallas{
+    display: flex;
+    gap: 10%;
+}
+.talla{
+    width: 30px;
+    border: 1px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+}
+.btns{
+    padding:8px 0;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.add{
+    background-color:black;
+    color:white;
+}
+.buy{
+    background-color:rgb(66, 118,251);
+    color:white;
+}
+.cambiarSlider{
+    opacity: 0;
+}
+ul, li {
+    list-style: none;
+}
+
+@media screen and (max-width: 425px){
+    main{
+        flex-direction: row;
+    }
+    .primeraParte{
+        display: none;
+    }
+    .segundaParte{
+        max-width:96%;
+        height: 590px;
+        overflow-x: scroll;
+    }
+    .terceraParte{
+        position: absolute;
+        top: 110%;
+        max-width:96%;
+        align-items: center;
+        text-align: center;        
+    }
+    .terceraParte h2{
+        font-size: 50px;
+    }
+}
