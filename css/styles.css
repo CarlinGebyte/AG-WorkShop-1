@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+html, body, div, span, button, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, a, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+/*------------------------------------*\
+    $SITIO
+\*------------------------------------*/
+
+html {
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--GrayishBlue);
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+
+}
+
+a, button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*------------------------------------*\
+    $TIPOGRAFÍA
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--VeryDarkBlue);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+span {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+/*------------------------------------*\
+    $LINK
+\*------------------------------------*/
+
+a {
+  text-decoration: none;
+  color: var(--SoftRed);
+  /* color: var(--White); */
+}
+
+a:hover {
+  color: var(--SoftRed);
+}
+
+a:focus {
+  outline: none;
+}
+
+a:hover, a:active {
+  outline: none;
+}
+
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+
+.prince {
+  width: 90%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  color: #fff;
+}
+
+.prince-logo {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prince-nav {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  background-color: #1D1D1D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: .6s;
+  z-index: 1;
+}
+
+.show {
+  left: 0;
+}
+
+.prince-navMenu {
+  margin-top: 1rem;
+}
+
+.prince-navMenu, .prince-navUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prince-navMenu a {
+  margin-bottom: 1rem;
+}
+
+.prince-navUser img {
+  display: none;
+  cursor: pointer;
+}
+
+.prince-navBtn {
+  width: 40px;
+  height: 40px;
+  padding: 0 6px;
+  z-index: 2;
+}
+
+.prince-navBurger {
+  position: relative;
+  padding: 10px 0;
+}
+
+
+.prince-navLine, .prince-navLine::after, .prince-navLine::before {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 20px;
+  background-color: #1D1D1D;
+  transition: .6s;
+}
+
+.prince-navLine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.prince-navLine::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+}
+
+.prince-navLine.active {
+  transform: rotate(45deg);
+}
+
+.prince-navLine.active::before {
+  transform: rotate(90deg);
+}
+
+.prince-navLine.active::after {
+  display: none;
+}
+
+/*------------------------------------*\
+    $CARDS
+\*------------------------------------*/
+.prince-content {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    display: none;
+}
+
+.prince-content h1 {
+  text-align: center;
+}
+
+.prince-slide {
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  overflow-x: scroll;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.prince-card {
+  width: 300px;
+  text-align: center;
+}
+
+.prince-cardDetails {
+  margin-top: 1rem;
+}
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+.prince-footer {
+  width: 100%;
+  
+  background-color: #1D1D1D;
+}
+
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+}
+
+.prince-footerImg {
+  height: 100%;
+  width: 100%;
+}
+
+.prince-footerSocial {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prince-footerLogo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prince_footerRrss {
+  display: flex;
+  width: 150px;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.prince-footerIcon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+/*------------------------------------*\
+  $MEDIA QUERIES
+\*------------------------------------*/
+@media only screen and (min-width:768px) {
+  .prince-nav {
+    width: 55%;
+    height: initial;
+    position: initial;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: initial;
+    z-index: initial;
+  }
+
+  .prince-navMenu, .prince-navUser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .prince-navMenu {
+    margin-top: 0;
+  }
+
+  .prince-navMenu a {
+    margin-bottom: 0;
+    color: #1D1D1D;
+  }
+
+  .prince-navUser a {
+    display: none;
+  }
+
+  .prince-navUser img {
+    display: block;
+  }
+
+  .prince-navBtn {
+    display: none;
+  }
+
+  .prince-footerCover {
+    height: 500px;
+  }
+}
+
+/* CART */
+.cerrar img {
+    position: absolute;
+    right: 3%;
+    top: 0.5%;
+    object-fit: cover;
+    height: initial;
+    width: initial;
+}
+.carrito {
+    /* display: flex; */
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.274);
+    display: none;
+}
+.container {
+    max-width: 35%;
+    position: fixed;
+    border: 1px solid;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+/* .cerrar{
+    margin: 2% 92%; 
+} */
+.seccion1{
+    display: flex;
+    margin: 12% 8%;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.cantidad{
+    border-bottom: 1px solid;
+    text-align: center;
+}
+.subtotal{
+    font-size: 25px;
+    justify-content: flex-end;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 8%;
+}
+.font{
+    font-size:22px
+}
+.parrafo{
+    font-size:14px;
+    color: rgb(74, 74, 74);
+    margin: 2% 8%;
+}
+.btnCheck{
+    margin:2% 8%;
+    padding: 3% 0;
+    color:white;
+    background-color: rgb(66, 118,251);
+    border:none;
+    font-weight: 800;
+    border-radius: 5px;
+}
+.margin{
+    margin: 2% 8%;
+    font-size: 14px;
+}

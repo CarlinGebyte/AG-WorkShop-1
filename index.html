@@ -1,12 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Principe Fresco | WorkShop</title>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/producto.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="carrito">
+      <div class="container">
+        <div class="cerrar">
+          <img id="close-cart" src="./img/cerrar.png" alt="" />
+        </div>
+        <div id="cart-items">
+            <div class="seccion1">
+              <div>
+                <img src="./img/Rectangle 1.png" alt="Img producto comrar" />
+              </div>
+              <div>
+                <h2>Crown Sweatshirt</h2>
+                <p><span> S </span> $85.00</p>
+              </div>
+              <div>
+                <p class="cantidad">1</p>
+                <p>Remove</p>
+              </div>
+            </div>
+        </div>
+        <div class="flex">
+          <p class="font">Subtotal</p>
+          <p class="font">$85.00</p>
+        </div>
+        <p class="parrafo">
+          Shiping, taxes, and discount codes calculated at checkout.
+        </p>
+        <button class="btnCheck">CHECK OUT</button>
+        <p class="margin">
+          <strong
+            >Please Note: All items are pre-order and will ship in 6-10 weeks.
+            Guaranteed holiday delivery.</strong
+          >
+        </p>
+      </div>
+    </div>
+    <div class="modal-detail">
+        <div class="detail-container">
+            <div class="primeraParte">
+                <ul class="slider">
+                    <li><img id="slider1" src="./img/miniatura1.png" alt="" /></li>
+                    <li><img id="slider2" src="./img/miniatura2.png" alt="" /></li>
+                    <li><img id="slider3" src="./img/miniatura3.png" alt="" /></li>
+                    <li><img id="slider4" src="./img/miniatura4.png" alt="" /></li>
+                </ul>
+                <ul class="cambiarSlider">
+                    <li><a href="#slider1">1</a></li>
+                    <li><a href="#slider2">2</a></li>
+                    <li><a href="#slider3">3</a></li>
+                    <li><a href="#slider4">4</a></li>
+                </ul>
+            </div>
+            <div class="segundaParte">
+                <img src="./img/producto1.png" alt="" />
+                <img src="./img/producto2.png" alt="" />
+                <img src="./img/producto2.png" alt="" />
+                <img src="./img/producto2.png" alt="" />
+            </div>
+            <div class="terceraParte">
+                <h2>Crown Sweatshirt</h2>
+                <h3>$ <span> 80.00</span></h3>
+                <h4>Size</h4>
+                <div class="tallas">
+                    <div class="talla">S</div>
+                    <div class="talla">M</div>
+                    <div class="talla">L</div>
+                    <div class="talla">XL</div>
+                    <div class="talla">XXL</div>
+                </div>
+                <div class="flex">
+                    <button class="btns add">ADD TO CARD</button>
+                    <button class="btns buy">BUY IT NOW</button>
+                </div>
+                <h4>
+                    Let them know you´re 90s royalty with this official The Fresh
+                    Prince crown pattern sweater. Throw vintage vibes that Uncle Phil
+                    would approve of. Featuring woven The Fresh Prince logo on chest.
+                    Navy crown print crew neck sweatshirt with white ribbed collar and
+                    waist band. Cotton/Poly blend.
+                </h4>
     
-</body>
+                <h4><u>Click for Sizing</u></h4>
+            </div>
+        </div>
+    </div>
+    <div class="modal-login" id="modal-login">
+        <div class="modal-container">
+            <div class="header-modal">
+                <h3>LOGIN</h3>
+            </div>
+            <div class="body-modal">
+                <form id="login-form">
+                    <input class="form-control" type="email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required
+                        placeholder="email">
+                    <input class="form-control" type="password" id="pass" required placeholder="password">
+                    <button type="submit" class="btn btn-success" id="btn-login">LogIn</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="prince">
+      <figure class="prince-logo">
+        <img src="./img/logo-fresh.png" alt="logo fresh" />
+      </figure>
+      <nav class="prince-nav" id="menu">
+        <div class="prince-navMenu">
+          <a href="" class="prince-navMenu-link">Shop</a>
+          <a href="" class="prince-navMenu-link">Collections</a>
+        </div>
+        <div class="prince-navUser">
+          <a href="" class="prince-navMenu-link">login</a>
+          <img src="./img/icon-user.png" id="user-icon" alt="icon user" />
+          <img src="./img/icon-cart.png" id="cart-icon" alt="icon cart" />
+        </div>
+      </nav>
+      <button class="prince-navBtn" id="burger">
+        <div class="prince-navBurger"><span class="prince-navLine"></span></div>
+      </button>
+    </header>
+    <main class="prince-content">
+      <h1>you may also like</h1>
+      <section class="prince-slide" id="slide">
+        <article class="prince-card">
+          <figure class="prince-cardImg">
+            <img src="./img/img-1.png" alt="" />
+          </figure>
+          <div class="prince-cardDetails">
+            <h3>Fresh stripe sweater</h3>
+            <span>$85.00</span>
+          </div>
+        </article>
+        <article class="prince-card">
+          <figure class="prince-cardImg">
+            <img src="./img/img-1.png" alt="" />
+          </figure>
+          <div class="prince-cardDetails">
+            <h3>Fresh stripe sweater</h3>
+            <span>$85.00</span>
+          </div>
+        </article>
+        <article class="prince-card">
+          <figure class="prince-cardImg">
+            <img src="./img/img-1.png" alt="" />
+          </figure>
+          <div class="prince-cardDetails">
+            <h3>Fresh stripe sweater</h3>
+            <span>$85.00</span>
+          </div>
+        </article>
+      </section>
+    </main>
+    
+    <footer class="prince-footer footer-fixed">
+      <section class="prince-footerCover">
+        <figure class="prince-footerImg">
+          <img src="./img/cover.png" alt="cover" />
+        </figure>
+      </section>
+      <section class="prince-footerSocial">
+        <figure class="prince-footerLogo">
+          <img src="./img/logo-fresh.png" alt="" />
+        </figure>
+        <div class="prince_footerRrss">
+          <figure class="prince-footerIcon">
+            <img src="./img/icon-yt.png" alt="icon youtube" />
+          </figure>
+          <figure class="prince-footerIcon">
+            <img src="./img/icon-fb.png" alt="icon facebook" />
+          </figure>
+        </div>
+      </section>
+    </footer>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/login.js" type="module"></script>
+  </body>
 </html>
