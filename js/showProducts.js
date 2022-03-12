@@ -1,16 +1,17 @@
 const showProducts = async (array, cards) => {
-  const products = await array;
+  const products = array;
+  console.log(products);
   products.forEach((product) => {
     const { id, name, img, price } = product;
-    const card = `
-        <div class="card" value="${id}">
-            <img src="${img}" value="${id}" class="card-img-top"
-                alt="product" />
-            <div class="card-body" value="${id}">
-                <h5 class="card-title" value="${id}">${name}</h5>
-                <h5 class="card-title" value="${id}">${price}</h5>
-            </div>
-        </div>
+    cards.innerHTML += `
+        <article class="prince-card">
+					<figure class="prince-cardImg"><img src="${img.img1}" value="${id}" class="card-img-top"
+                alt="product" /></figure>
+					<div class="prince-cardDetails">
+						<h5 class="card-title" value="${id}">${name}</h5>
+						<h5 class="card-title" value="${id}">${price}</h5>
+					</div>
+				</article>
     `;
   });
 };

@@ -4,8 +4,8 @@ import showProducts from "./showProducts.js";
 const user = document.getElementById("user-icon");
 const form = document.getElementById("login-form");
 const modal = document.getElementById("modal-login");
-const url = "https://fresh-prince-ag.herokuapp.com";
-const cards = document.getElementById("cards-container");
+const url = "https://fresh-prince-ag.herokuapp.com/Products";
+const cards = document.getElementById("slide");
 
 // user.addEventListener("click", () => {
 //   modal.style.display = block;
@@ -17,6 +17,7 @@ form.addEventListener("submit", async (e) => {
   const pass = document.getElementById("pass").value;
   if (email != "" && pass != "") {
     modal.style.display = "none";
+    cards.innerHTML = "";
     const products = await getProducts(url);
     await showProducts(products, cards);
   } else {
