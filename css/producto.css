@@ -7,7 +7,6 @@
 }
 main{
     display: flex;
-    margin: 2%;
 }
 .primeraParte{
     max-width: 15%;
@@ -74,6 +73,27 @@ main{
 }
 ul, li {
     list-style: none;
+}
+
+.modal-detail {
+    width: 100%;
+    height: 100%;
+    background-color: #0000006c;
+    padding: 2em 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.detail-container {
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 3vh;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 1em;
 }
 
 @media screen and (max-width: 425px){

@@ -1,11 +1,13 @@
 import getProducts from "./getProducts.js";
-const modal = document.getElementById("");
 
 const modalDetail = async (url, idProduct) => {
   const product = await getProducts(url + idProduct);
   const { id, name, img, price, description, size } = product;
-  modal.innerHTML = "";
-  modal.innerHTML = `
+  console.log(product)
+  const modal = document.getElementsByClassName("modal-detail");
+
+  modal[0].innerHTML = "";
+  modal[0].innerHTML = `
       <div class="primeraParte">
         <img src="${img.img1}" alt="" />
         <img src="${img.img2}" alt="" />
@@ -40,6 +42,7 @@ const modalDetail = async (url, idProduct) => {
         <h4><u>Click for Sizing</u></h4>
       </div>
   `;
+  modal[0].style.display = "flex";
 };
 
 export default modalDetail;
